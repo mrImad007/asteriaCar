@@ -45,21 +45,14 @@
   };
   </script>
   
-  <style>
+  <style lang="scss">
 
   .services{
     opacity: 50%;
+    &:hover{
+        opacity: 100%;
+    }
   }
-  .services:hover{
-    opacity: 100%;
-  }
-
-  /* .fade-enter-active,
-  .fade-leave-active {
-    transition: all 0.9s ease;
-    overflow: hidden;
-    visibility: visible;
-  } */
   
   .fade-enter,
   .fade-leave-to {

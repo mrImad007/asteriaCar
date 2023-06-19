@@ -20,11 +20,10 @@ export default {
 </script>
 
 <style>
+
 .main{
   display: flex;
   width: max-content;
-  padding: 0%;
-  margin: 0%;
 }
 .AppService{
   margin-left: -212px;

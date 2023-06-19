@@ -1,7 +1,9 @@
 <template>
     <div>
+      
       <transition-group name="fade" tag="div" >
         <div v-for="i in [currentIndex]" :key="i" class="location">
+          <h1>Location de voiture</h1>
           <img :src="currentImg" />
         </div>
     </transition-group>
@@ -45,19 +47,14 @@
   };
   </script>
   
-  <style>
+  <style lang="scss">
 
   .location{
     opacity: 50%;
+    &:hover{
+      opacity: 100%;
+    }
   }
-  .location:hover{
-    opacity: 100%;
-  }
-
-  /* .fade-enter-active,
-  .fade-leave-active {
-    transition: all 0ms ease;
-  } */
   
   .fade-enter,
   .fade-leave-to {
@@ -69,6 +66,12 @@
   img {
     height: 100%;
     width: 100%;
+  }
+
+  h1{
+    position: absolute;
+    color: rgba(173, 10, 10, 1);
+    
   }
   
   </style>
