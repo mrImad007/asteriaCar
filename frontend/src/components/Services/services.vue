@@ -2,6 +2,9 @@
     <div>
       <transition-group name="fade" tag="div" >
         <div v-for="i in [currentIndex]" :key="i" class="services">
+        <a href="#" id="servicesH1">
+            <h1 >Services</h1>
+          </a>
           <img :src="currentImg" />
         </div>
     </transition-group>
@@ -14,10 +17,10 @@
     data() {
       return {
         images: [
-        require("../assets/service_car/image1.png"),
-        require("../assets/service_car/image2.png"),
-        require("../assets/service_car/image3.png"),
-        require("../assets/service_car/image4.png"),
+        require("../../assets/service_car/image1.png"),
+        require("../../assets/service_car/image2.png"),
+        require("../../assets/service_car/image3.png"),
+        require("../../assets/service_car/image4.png"),
         ],
         timer: null,
         currentIndex: 0
@@ -46,22 +49,5 @@
   </script>
   
   <style lang="scss">
-
-  .services{
-    opacity: 50%;
-    &:hover{
-        opacity: 100%;
-    }
-  }
-  
-  .fade-enter,
-  .fade-leave-to {
-    visibility: hidden;
-    width: 100%;
-  }
-  
-  img {
-    height: 100%;
-    width: 100%;
-  }
+  @import './services.scss';
   </style>

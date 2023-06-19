@@ -1,9 +1,10 @@
 <template>
     <div>
-      
       <transition-group name="fade" tag="div" >
         <div v-for="i in [currentIndex]" :key="i" class="location">
-          <h1>Location de voiture</h1>
+          <a href="">
+            <h1 id="LocationH1">Location de voiture</h1>
+          </a>
           <img :src="currentImg" />
         </div>
     </transition-group>
@@ -16,10 +17,10 @@
     data() {
       return {
         images: [
-        require("../assets/location_car/image1.png"),
-        require("../assets/location_car/image2.png"),
-        require("../assets/location_car/image3.png"),
-        require("../assets/location_car/image4.png"),
+        require("../../assets/location_car/image1.png"),
+        require("../../assets/location_car/image2.png"),
+        require("../../assets/location_car/image3.png"),
+        require("../../assets/location_car/image4.png"),
         ],
         timer: null,
         currentIndex: 0
@@ -48,30 +49,5 @@
   </script>
   
   <style lang="scss">
-
-  .location{
-    opacity: 50%;
-    &:hover{
-      opacity: 100%;
-    }
-  }
-  
-  .fade-enter,
-  .fade-leave-to {
-    visibility: hidden;
-    transition: all 0ms ease;
-    width: 100%;
-  }
-  
-  img {
-    height: 100%;
-    width: 100%;
-  }
-
-  h1{
-    position: absolute;
-    color: rgba(173, 10, 10, 1);
-    
-  }
-  
+  @import './location.scss';
   </style>
