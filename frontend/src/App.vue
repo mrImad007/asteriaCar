@@ -1,13 +1,8 @@
 <template>
   <div class="main">
-    <div class="LocationLogo rounded-circle">
-      <img src="./assets/logo.png" alt="logo">
-    </div>
     <locationComponent class="AppLocation"></locationComponent>
     <servicesComponent class="AppService"></servicesComponent>
-    <div class="ServicesLogo rounded-circle">
-      <img src="./assets/logo.png" alt="logo">
-    </div>
+    
   </div>
 </template>
 
@@ -38,7 +33,7 @@ export default {
 .AppLocation{
   margin-left: -10px;
 }
-.LocationLogo{
+/* .LocationLogo{
   position: absolute;
   background-color: white;
 }
@@ -47,5 +42,5 @@ export default {
   top: 70%;
   right: 10%;
   background-color: white;
-}
+} */
 </style>

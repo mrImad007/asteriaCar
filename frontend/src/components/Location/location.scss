@@ -2,9 +2,12 @@
 .location{
     opacity: 70%;
     &:hover{
-      opacity: 100%;
+      opacity: 90%;
       #LocationH1{
         color: rgba(173, 10, 10, 1);
+      }
+      .LocationLogo{
+        background-color: white;
       }
     }
   }
@@ -33,6 +36,11 @@
       &:hover{
         color: rgba(173, 10, 10, 1);
       }
+  }
+  .LocationLogo{
+    position: absolute;
+    top: 2%;
+    left: 2%;
   }
 
   

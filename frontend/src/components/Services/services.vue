@@ -3,8 +3,11 @@
       <a href="">
       <transition-group name="fade" tag="div" >
         <div v-for="i in [currentIndex]" :key="i" class="services">
+        <div class="ServicesLogo rounded-circle">
+          <img src="../../assets/logo.png" alt="logo">
+        </div>
         <a href="#" id="servicesH1">
-            <font size="+10" id="LocationH1"><strong>Services</strong></font>
+            <font size="+10" id="ServicesH1"><strong>Services</strong></font>
           </a>
           <img :src="currentImg" />
         </div>

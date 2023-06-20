@@ -3,6 +3,9 @@
       <a href="#">
       <transition-group name="fade" tag="div" >
         <div v-for="i in [currentIndex]" :key="i" class="location">
+          <div class="LocationLogo rounded-circle">
+            <img src="../../assets/logo.png" alt="logo">
+          </div>
           <a href="">
             <font size="+10" id="LocationH1"><strong>Location de voiture</strong></font>
           </a>

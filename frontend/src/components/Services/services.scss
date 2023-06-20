@@ -2,9 +2,12 @@
 .services{
     opacity: 70%;
     &:hover{
-        opacity: 100%;
+        opacity: 90%;
         #servicesH1{
             color: rgba(173, 10, 10, 1);
+        }
+        .ServicesLogo{
+            background-color: white;
         }
     }
 }
@@ -13,7 +16,7 @@
     text-decoration: none;
     position: absolute;
     top: 30%;
-    right: 30%;
+    right: 20%;
     background-image: linear-gradient(90.92deg, #AD0A0A 0%, rgba(139, 23, 23, 0.9243) 13.28%, rgba(129, 24, 24, 0.835518) 28.85%, rgba(90, 37, 37, 0.69) 54.37%, rgba(106, 31, 31, 0.827103) 70.95%, #AD0A0A 91.86%, rgba(173, 10, 10, 0) 112.01%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -32,4 +35,10 @@
   img {
     height: 100%;
     width: 100%;
+  }
+
+  .ServicesLogo{
+    position: absolute;
+    top: 70%;
+    right: 2%;
   }
