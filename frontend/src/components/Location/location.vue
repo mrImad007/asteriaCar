@@ -1,5 +1,6 @@
 <template>
     <div>
+      <a href="#">
       <transition-group name="fade" tag="div" >
         <div v-for="i in [currentIndex]" :key="i" class="location">
           <a href="">
@@ -8,6 +9,7 @@
           <img :src="currentImg" />
         </div>
     </transition-group>
+      </a>
     </div>
   </template>
   
