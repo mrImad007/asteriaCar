@@ -3,7 +3,7 @@
       <transition-group name="fade" tag="div" >
         <div v-for="i in [currentIndex]" :key="i" class="location">
           <a href="">
-            <h1 id="LocationH1">Location de voiture</h1>
+            <font size="+10" id="LocationH1"><strong>Location de voiture</strong></font>
           </a>
           <img :src="currentImg" />
         </div>
