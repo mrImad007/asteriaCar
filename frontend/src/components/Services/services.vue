@@ -1,18 +1,21 @@
 <template>
-    <div>
-      <a href="">
-      <transition-group name="fade" tag="div" >
-        <div v-for="i in [currentIndex]" :key="i" class="services">
+    <div class="outsideServices">
+          <div>
+            <a href="">
+            <transition-group name="fade" tag="div" >
+              <div v-for="i in [currentIndex]" :key="i" class="services">
+                  <img :src="currentImg" />
+              </div>
+          </transition-group>
+            </a>
+        </div>
         <div class="ServicesLogo rounded-circle">
           <img src="../../assets/logo.png" alt="logo">
         </div>
         <a href="#" id="servicesH1">
-            <font size="+10" id="ServicesH1"><strong>Services</strong></font>
-          </a>
-          <img :src="currentImg" />
-        </div>
-    </transition-group>
-      </a>
+          <font size="+10" id="ServicesH1"><strong>Services</strong></font>
+        </a>
+      <font size="+10" id="AsteriaCarServices"><strong>A s t e r i a   C a r</strong></font>
     </div>
   </template>
   

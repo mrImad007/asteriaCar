@@ -1,19 +1,23 @@
 <template>
-    <div>
-      <a href="#">
-      <transition-group name="fade" tag="div" >
-        <div v-for="i in [currentIndex]" :key="i" class="location">
-          <div class="LocationLogo rounded-circle">
-            <img src="../../assets/logo.png" alt="logo">
-          </div>
-          <a href="">
-            <font size="+10" id="LocationH1"><strong>Location de voiture</strong></font>
-          </a>
-          <img :src="currentImg" />
+    <div class="outsideLocation">
+        <div>
+            <a href="#">
+            <transition-group name="fade" tag="div" >
+              <div v-for="i in [currentIndex]" :key="i" class="location">
+                <img :src="currentImg" />
+              </div>
+          </transition-group>
+            </a>
         </div>
-    </transition-group>
-      </a>
+        <div class="LocationLogo rounded-circle">
+          <img src="../../assets/logo.png" alt="logo">
+        </div>
+        <a href="">
+          <font size="+10" id="LocationH1"><strong>Location de voiture</strong></font>
+        </a>
+        <font size="+10" id="AsteriaCarLocation"><strong>A s t e r i a    C a r</strong></font>
     </div>
+    
   </template>
   
   <script>
