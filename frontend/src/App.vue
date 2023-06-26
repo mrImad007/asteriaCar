@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <locationComponent class="AppLocation"></locationComponent>
+    <locationComponent class="AppLocatn"></locationComponent>io
     <servicesComponent class="AppService"></servicesComponent>
     
   </div>
